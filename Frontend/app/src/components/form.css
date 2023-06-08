@@ -1,0 +1,187 @@
+@import url(../styles/styles.css);
+
+.header-folder {
+    width: 100%;
+}
+
+.form-buttons {
+    position: absolute;
+    padding: 250px 0 0 169px;
+    margin: 0;
+    justify-content: start;
+}
+
+.rect {
+    margin: 300px 5% 20% 100px;
+    width: 1100px;
+    height: 540px;
+    border-radius: 0 35px 35px 35px;
+    /*margin-left: 5%;*/
+    /*margin-top: 20%;*/
+    fill:#747A9B;
+    stroke:white;
+    stroke-width:2;
+    opacity:1;
+}
+
+.form-button1 {
+    width: 438px;
+    height: 53px;
+    border: 3px white solid;
+    background-color: #747A9B;
+    color: white;
+    stroke-width: 2;
+    opacity: 1;
+    text-align: center;
+    border-radius: 35px 54px 0 0;
+    /*padding-bottom: 20px;*/
+    font-size: 32px;
+    font-weight: normal;
+    border-bottom: #747A9B;
+    position: absolute;
+    border-right: #747A9B solid;
+    z-index: 1;
+    font-family: Gilroy;
+}
+
+.line {
+    position: absolute;
+    z-index: 3;
+}
+
+.anon-form {
+    position: absolute;
+    width: 950px;
+    height: 400px;
+    background-color: #747A9B;
+    padding: 50px;
+    margin: 302px 0 0 171px;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.full-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.passport {
+    display: flex;
+    justify-content: space-between;
+}
+
+.passport-textarea {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.visit-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.visit-reason {
+    display: flex;
+    justify-content: space-between;
+}
+
+.email {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    background-color: #B7BACB;
+    border: none;
+    font-family: Gilroy;
+    font-size: 20px;
+    height: 60px;
+    width: 300px;
+    border-radius: 35px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin: 20px 0 20px 0;
+}
+
+textarea {
+    background-color: #B7BACB;
+    border: none;
+    font-family: Gilroy;
+    font-size: 20px;
+    height: 60px;
+    width: 1000px;
+    border-radius: 35px;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 20px 0 20px 0;
+    padding-top: 30px;
+    resize: none;
+}
+
+legend {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: normal;
+    color: white;
+    margin: 20px 0 20px 0;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #747A9B;
+}
+
+.date:default, textarea:default, input:default {
+    outline: none;
+    color: #747A9B;
+}
+
+.date:focus, textarea:focus, input:focus, input:checked {
+    outline: none;
+    color: white;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.anon-form-checkbox-container {
+    font-family: Gilroy;
+    font-size: 16px;
+    align-items: center;
+    padding-right: 300px;
+    padding-top: 20px;
+    color: white;
+}
+
+.anon-form-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    background-color: #747A9B;
+    border-radius: 35px;
+}
+
+.anon-form-checkbox-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.anon-form-submit-button {
+    background-color: #6BC8F4;
+    border: none;
+    font-family: Gilroy;
+    font-size: 20px;
+    height: 60px;
+    width: 200px;
+    border-radius: 35px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
