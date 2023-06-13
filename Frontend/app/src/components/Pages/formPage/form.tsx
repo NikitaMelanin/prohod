@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import "./form.css"
 function FormPage () {
         return (
             <div>

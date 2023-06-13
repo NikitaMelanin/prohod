@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="adminPanel.css">
+</head>
+<body>
+<!--чтобы показать окно нижу надо изменить свойство visitor-information-window "display" с none на flex, а также
+z-index visitor-information-window-container с 0 на 10
+соответствующим образом с add-security.-->
+<div class="add-security-container"><div class="add-security-window">
+    <div class="add-security-header">
+        <button type="button" class="visitor-information-back">назад</button>
+        <span class="visitor-information-title">добавление <span class="visitor-information-blue">безопасника</span></span>
+    </div>
+    <div class="full-name">
+        <input type="text" required="required" title="" placeholder="Фамилия">
+        <input type="text" required="required" title="" placeholder="Имя">
+        <input type="text" required="required" title="" placeholder="Отчество">
+    </div>
+    <div class="email">
+        <input type="text" required="required" title="" placeholder="Email">
+    </div>
+    <div class="enter-data">
+        <input type="text" required="required" title="" placeholder="Логин">
+        <input type="password" required="required" title="" placeholder="Пароль">
+        <input type="password" required="required" title="" placeholder="Подтвердите пароль*">
+    </div>
+    <div class="add-button">
+        <button type="button" class="add-security-button-add">добавить</button>
+    </div>
+</div></div>
+<div class="visitor-information-window-container"><div class="visitor-information-window">
+    <div class="visitor-information-header">
+        <button type="button" class="visitor-information-back">назад</button>
+        <span class="visitor-information-title"><span class="visitor-information-blue">заявка</span> гостя</span>
+    </div>
+    <div class="full-name">
+        <output type="text" required="required" title="" placeholder="Фамилия">Ffffffffff</output>
+        <output type="text" required="required" title="" placeholder="Имя">Ffffffffff</output>
+        <output type="text" required="required" title="" placeholder="Отчество">Ffffffffff</output>
+    </div>
+    <div class="passport">
+        <output type="text" pattern="[0-9]{4}" title="" required="required" title="" placeholder="Серия паспорта">4444</output>
+        <output type="text" pattern="[0-9]{6}" title="" required="required" title="" placeholder="Номер паспорта">666666</output>
+        <output type="text" required="required" title="Когда выдан паспорт?">22.12.2000</output>
+    </div>
+    <div class="passport-textarea">
+        <output type="text" class="textarea" required="required" title="" placeholder="Кем выдан?">Отделением УФМС по Свердловской обл в г. Екатеринбурге</output>
+    </div>
+    <div class="visit-details">
+        <output type="text" class="date" required="required" title="Дата посещения">12.11.2033</output>
+        <output type="text" required="required" title="" placeholder="Время посещения">12:35</output>
+        <output type="text" required="required" title="" placeholder="Кого посещаете?">Обабков И.Н.</output>
+    </div>
+    <div class="visit-reason">
+        <output type="text" class="textarea" required="required" title="" placeholder="Цель визита">Решение о коллаборации бизнеса "АНАНАС"</output>
+    </div>
+    <div class="email">
+        <output type="text" required="required" title="" placeholder="Email">reallynigga@gmail.com</output>
+    </div>
+    <div class="accept-visitor-buttons">
+        <button class="accept-visitor">Принять</button>
+        <button class="deny-visitor">Отклонить</button>
+    </div>
+</div></div>
+<div class="header-folder">
+    <div class="logo-personal-account">
+        <img class="logo" src="../styles/logo.svg">
+        <button class="personal-account-enter">Фамилия И.О</button>
+    </div>
+    <div class="add-security">
+        <button type="button" class="add-security-button">добавить безопасника</button>
+        <span class="add-security-title">список <span class="add-security-title-blue">заявок</span> на вход</span>
+    </div>
+    <div class="searching-string">
+        <div class="searching-string"></div>
+    </div>
+    <div class="admin-panel-buttons">
+        <button class="admin-panel-button1">
+            Активные заявки
+        </button>
+        <button class="admin-panel-button2">
+            Отработанные заявки
+        </button>
+    </div>
+    <div class="inactive-application">
+        <div class="inactive-application-first-line">
+            <div class="application-number">#</div>
+            <div class="application-id">ID звявки</div>
+            <div class="application-guest">Посетитель</div>
+            <div class="application-host">Принимающий</div>
+            <div class="application-date">Дата посещения</div>
+            <div class="application-status">Статус</div>
+        </div>
+        <div class="inactive-application-string">
+            <div class="application-number">1</div>
+            <div class="application-id">1238uhw</div>
+            <div class="application-guest">Иванов И.И.</div>
+            <div class="application-host">Обабков И.Н.</div>
+            <div class="application-date">12.12.2012</div>
+            <div class="application-status">Принято</div>
+            <div class="space"></div>
+        </div>
+        <div class="inactive-application-string">
+            <div class="application-number">1</div>
+            <div class="application-id">5438uhw</div>
+            <div class="application-guest">Вайнштейн Х.О.</div>
+            <div class="application-host">Обабков И.Н.</div>
+            <div class="application-date">12.12.2012</div>
+            <div class="application-status">Отклонено</div>
+            <div class="space"></div>
+        </div>
+        <div class="inactive-application-string">
+            <div class="application-number">1</div>
+            <div class="application-id">7238uhw</div>
+            <div class="application-guest">Риодежанейро И.О.</div>
+            <div class="application-host">Обабков И.Н.</div>
+            <div class="application-date">12.12.2012</div>
+            <div class="application-status">Принято</div>
+            <div class="space"></div>
+        </div>
+        <div class="inactive-application-string">
+            <div class="application-number">1</div>
+            <div class="application-id">4838uhw</div>
+            <div class="application-guest">Кепушенко И.О.</div>
+            <div class="application-host">Обабков И.Н.</div>
+            <div class="application-date">12.12.2012</div>
+            <div class="application-status">Принято</div>
+            <div class="space"></div>
+        </div>
+        <div class="inactive-application-string">
+            <div class="application-number">1</div>
+            <div class="application-id">1438uhw</div>
+            <div class="application-guest">Шизиков И.О.</div>
+            <div class="application-host">Обабков И.Н.</div>
+            <div class="application-date">12.12.2012</div>
+            <div class="application-status">Принято</div>
+            <div class="space"></div>
+        </div>
+        <div class="inactive-application-string">
+            <div class="application-number">1</div>
+            <div class="application-id">2438uhw</div>
+            <div class="application-guest">Петров И.О.</div>
+            <div class="application-host">Обабков И.Н.</div>
+            <div class="application-date">12.12.2012</div>
+            <div class="application-status">Отклонено</div>
+            <div class="space"></div>
+        </div>
+        <div class="inactive-application-str-switch">
+            <button class="str-switch-back"><<img src=""></button>
+            <span class="str-switch-number">1</span>
+            <button class="str-switch-next">><img src=""></button>
+        </div>
+    </div>
+    <svg class="polygon" width="100%" height="400" transform="translate(70 1)">
+        <polygon
+                points="940,335 942,255 1090,335"
+                style="
+                        width: 100px;
+                        height: 100px;
+                        fill:#747A9B;
+                        /*stroke: #747A9B;*/
+                        /*stroke-width:1;*/
+                        opacity:1;"
+        />
+    </svg>
+    <svg class="line" width="90%" height="900" transform="translate(70 1)">
+        <line
+                x1="100"
+                y1="100"
+                x2="1300"
+                y2="100"
+                style="
+                        stroke: white;
+                        stroke-width: 2;"
+        />
+        <line
+                x1="100"
+                y1="300"
+                x2="1000"
+                y2="300"
+                style="
+                        stroke: white;
+                        stroke-width: 2;"
+        />
+        <line
+                x1="506"
+                y1="255"
+                x2="578"
+                y2="300"
+                style="
+                        stroke: white;
+                        stroke-width: 2.5;"
+        />
+        <line
+                x1="944"
+                y1="255"
+                x2="1027"
+                y2="300"
+                style="
+                        stroke: white;
+                        stroke-width: 2.5;"
+        />
+    </svg>
+    <svg class="rectangle" width="100%" height="1025" transform="translate(70 1)">
+        <rect
+                x="100"
+                y="300"
+                rx="35"
+                ry="35"
+                style="
+                        width: 1200px;
+                        height: 700px;
+                        /*margin-left: 5%;*/
+                        /*margin-top: 20%;*/
+                        fill:#747A9B;
+                        stroke:white;
+                        stroke-width:2.5;
+                        opacity:1;"
+        />
+        <rect
+                x="100"
+                y="300"
+                ry="0"
+                style="
+                        width: 100px;
+                        height: 100px;
+                        /*margin-left: 5%;*/
+                        /*margin-top: 20%;*/
+                        fill:#747A9B;
+                        stroke: white;
+                        stroke-width:2;
+                        opacity:1;"
+        />
+        <polygon
+                points="500,335 505,255 635,335"
+                style="
+                        width: 100px;
+                        height: 100px;
+                        /*margin-left: 17%;*/
+                        /*margin-top: 25%;*/
+                        fill:#747A9B;
+                        stroke: #747A9B;
+                        stroke-width:2.5;
+                        opacity:1;"
+        />
+    </svg>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="active-header-folder">
+    <div class="logo-personal-account">
+        <img class="logo" src="../styles/logo.svg">
+        <button onclick="document.location='../personalAccount/personalAccount.html'" class="personal-account-enter">Фамилия И.О</button>
+    </div>
+    <div class="add-security">
+        <button type="button" class="add-security-button">добавить безопасника</button>
+        <span class="add-security-title">список <span class="add-security-title-blue">заявок</span> на вход</span>
+    </div>
+    <div class="active-searching-strings">
+        <div class="active-searching-string"></div>
+    </div>
+    <div class="admin-panel-buttons">
+        <button class="active-admin-panel-button1">
+            Активные заявки
+        </button>
+        <button class="admin-panel-button2">
+            Отработанные заявки
+        </button>
+    </div>
+    <div class="active-application">
+        <div class="active-application-first-line">
+            <div class="application-number">#</div>
+            <div class="application-id">ID звявки</div>
+            <div class="application-guest">Посетитель</div>
+            <div class="application-host">Принимающий</div>
+            <div class="application-date">Дата посещения</div>
+            <div class="application-status">Статус</div>
+        </div>
+        <div class="active-application-string">
+            <div class="application-number">1</div>
+            <div class="application-id">1238uhw</div>
+            <div class="application-guest">Иванов И.И.</div>
+            <div class="application-host">Обабков И.Н.</div>
+            <div class="application-date">12.12.2012</div>
+            <div class="application-status">Ожидает</div>
+            <div class="space"></div>
+        </div>
+        <div class="active-application-string">
+            <div class="application-number">1</div>
+            <div class="application-id">5438uhw</div>
+            <div class="application-guest">Вайнштейн Х.О.</div>
+            <div class="application-host">Обабков И.Н.</div>
+            <div class="application-date">12.12.2012</div>
+            <div class="application-status">Отклонено</div>
+            <div class="space"></div>
+        </div>
+        <div class="active-application-string">
+            <div class="application-number">1</div>
+            <div class="application-id">7238uhw</div>
+            <div class="application-guest">Риодежанейро И.О.</div>
+            <div class="application-host">Обабков И.Н.</div>
+            <div class="application-date">12.12.2012</div>
+            <div class="application-status">Принято</div>
+            <div class="space"></div>
+        </div>
+        <div class="active-application-string">
+            <div class="application-number">1</div>
+            <div class="application-id">4838uhw</div>
+            <div class="application-guest">Кепушенко И.О.</div>
+            <div class="application-host">Обабков И.Н.</div>
+            <div class="application-date">12.12.2012</div>
+            <div class="application-status">Принято</div>
+            <div class="space"></div>
+        </div>
+        <div class="active-application-string">
+            <div class="application-number">1</div>
+            <div class="application-id">1438uhw</div>
+            <div class="application-guest">Шизиков И.О.</div>
+            <div class="application-host">Обабков И.Н.</div>
+            <div class="application-date">12.12.2012</div>
+            <div class="application-status">Принято</div>
+            <div class="space"></div>
+        </div>
+        <div class="active-application-string">
+            <div class="application-number">1</div>
+            <div class="application-id">2438uhw</div>
+            <div class="application-guest">Петров И.О.</div>
+            <div class="application-host">Обабков И.Н.</div>
+            <div class="application-date">12.12.2012</div>
+            <div class="application-status">Отклонено</div>
+            <div class="space"></div>
+        </div>
+        <div class="active-application-str-switch">
+            <button class="str-switch-back"><<img src=""></button>
+            <span class="str-switch-number">1</span>
+            <button class="str-switch-next">><img src=""></button>
+        </div>
+    </div>
+    <svg class="polygon" width="100%" height="400" transform="translate(70 1)">
+        <polygon
+                points="500,335 505,255 650,335"
+                style="
+                        width: 100px;
+                        height: 100px;
+                        /*margin-left: 17%;*/
+                        /*margin-top: 25%;*/
+                        fill:#747A9B;
+                        opacity:1;"
+        />
+    </svg>
+    <svg class="line" width="90%" height="900" transform="translate(70 1)">
+        <line
+                x1="100"
+                y1="100"
+                x2="1300"
+                y2="100"
+                style="
+                        stroke: white;
+                        stroke-width: 2;"
+        />
+        <line
+                x1="100"
+                y1="300"
+                x2="1050"
+                y2="300"
+                style="
+                        stroke: white;
+                        stroke-width: 2;"
+        />
+        <line
+                x1="506"
+                y1="255"
+                x2="589"
+                y2="300"
+                style="
+                        stroke: white;
+                        stroke-width: 3;"
+        />
+        <line
+                x1="944"
+                y1="255"
+                x2="1027"
+                y2="300"
+                style="
+                        stroke: white;
+                        stroke-width: 2.5;"
+        />
+    </svg>
+    <svg class="rectangle" width="100%" height="1025" transform="translate(70 1)">
+        <rect
+                x="100"
+                y="300"
+                rx="35"
+                ry="35"
+                style="
+                        width: 1200px;
+                        height: 700px;
+                        /*margin-left: 5%;*/
+                        /*margin-top: 20%;*/
+                        fill:#747A9B;
+                        stroke:white;
+                        stroke-width:2.5;
+                        opacity:1;"
+        />
+        <rect
+                x="100"
+                y="300"
+                ry="0"
+                style="
+                        width: 100px;
+                        height: 100px;
+                        /*margin-left: 5%;*/
+                        /*margin-top: 20%;*/
+                        fill:#747A9B;
+                        stroke: white;
+                        stroke-width:2;
+                        opacity:1;"
+        />
+        <polygon
+                points="940,335 942,255 1090,335"
+                style="
+                        width: 100px;
+                        height: 100px;
+                        fill:#747A9B;
+                        /*stroke: #747A9B;*/
+                        /*stroke-width:1;*/
+                        opacity:1;"
+        />
+    </svg>
+</div>
+</body>
