@@ -1,6 +1,6 @@
-@import url(../../../styles/styles.css);
+@import url(../Frontend/app/src/styles/styles.css);
 
-.headers-folder {
+.header-folder {
     width: 100%;
 }
 
@@ -183,13 +183,5 @@ input[type=date]::-webkit-calendar-picker-indicator {
     border-radius: 35px;
     text-align: center;
     justify-content: center;
-    color: white;
-}
-
-.anon-form-submit-button:hover {
-    cursor: pointer;
-    stroke-width: 2;
-    border: #6BC8F4 solid;
-    background-color: transparent;
     color: white;
 }

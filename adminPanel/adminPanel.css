@@ -1,0 +1,117 @@
+@import url(../Frontend/app/src/styles/styles.css);
+
+.admin-panel-buttons {
+    position: absolute;
+    padding: 250px 0 0 169px;
+    margin: 0;
+    justify-content: start;
+}
+
+.rect {
+    margin: 300px 5% 20% 100px;
+    width: 1100px;
+    height: 540px;
+    border-radius: 0 35px 35px 35px;
+    /*margin-left: 5%;*/
+    /*margin-top: 20%;*/
+    fill:#747A9B;
+    stroke:white;
+    stroke-width:2;
+    opacity:1;
+}
+
+.admin-panel-button1 {
+    width: 438px;
+    height: 53px;
+    border: 3px white solid;
+    background-color: #747A9B;
+    color: white;
+    stroke-width: 2;
+    opacity: 1;
+    text-align: center;
+    border-radius: 35px 51px 0 0;
+    /*padding-bottom: 20px;*/
+    font-size: 32px;
+    font-weight: normal;
+    border-bottom: #747A9B;
+    position: absolute;
+    border-right: #747A9B solid;
+    z-index: 1;
+    font-family: Gilroy;
+}
+
+.admin-panel-button2 {
+    width: 438px;
+    height: 53px;
+    border: 3px white solid;
+    background-color: #747A9B;
+    color: white;
+    stroke-width: 2;
+    opacity: 1;
+    text-align: center;
+    border-radius: 35px 50px 0 0;
+    margin-left: 438px;
+    font-size: 32px;
+    font-weight: normal;
+    border-bottom: #747A9B;
+    position: absolute;
+    border-right: #747A9B solid;
+    z-index: 2;
+    font-family: Gilroy;
+}
+
+.polygon {
+    position: absolute;
+    z-index: 2;
+}
+
+.line {
+    position: absolute;
+    z-index: 1;
+}
+
+.inactive-application {
+    position: absolute;
+    width: 950px;
+    height: 400px;
+    background-color: #747A9B;
+    padding: 50px;
+    margin: 302px 0 0 171px;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inactive-application-first-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    align-items: center;
+    font-family: Gilroy;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.inactive-application-string {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #B7BACB;
+    border-radius: 35px;
+    padding: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+    font-family: Gilroy;
+    font-size: 16px;
+    color: white;
+}
+
+.searching-string {
+    color: white;
+    width: 250px;
+    background-color: #B7BACB;
+    border-radius: 35px;
+}

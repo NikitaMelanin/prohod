@@ -1,4 +1,4 @@
-@import url(../styles/styles.css);
+@import url(../../../../styles/styles.css);
 
 .header-folder {
     display: none; /*отработанные заявки. с none на block*/
