@@ -45,7 +45,6 @@
     background-color: #121629;
     border: white 2px solid;
     border-radius: 35px;
-    font-family: Gilroy;
     position: absolute;
     padding: 4em 4em 0 4em;
 }
@@ -53,7 +52,6 @@
 .visitor-information-back {
     background-color: #6BC8F4;
     border: none;
-    font-family: Gilroy;
     font-size: 20px;
     height: 60px;
     width: 200px;
@@ -81,7 +79,6 @@
 .accept-visitor {
     background-color: #6BC8F4;
     border: none;
-    font-family: Gilroy;
     font-size: 20px;
     height: 60px;
     width: 200px;
@@ -94,7 +91,6 @@
 .deny-visitor {
     background-color: #B7BACB;
     border: none;
-    font-family: Gilroy;
     font-size: 20px;
     height: 60px;
     width: 200px;
@@ -115,7 +111,6 @@
 .add-security-button-add {
     background-color: #6BC8F4;
     border: none;
-    font-family: Gilroy;
     font-size: 20px;
     height: 40px;
     width: 250px;
@@ -133,7 +128,6 @@
 }
 
 .add-security-title, .visitor-information-title {
-    font-family: Gilroy;
     font-size: 24px;
     color: white;
     position: absolute;
@@ -141,7 +135,6 @@
 }
 
 .visitor-information-blue {
-    font-family: Gilroy;
     font-size: 24px;
     color: #6BC8F4;
 }
@@ -156,16 +149,15 @@
     justify-content: space-between;
 }
 
-.logo {
+.logo-admin {
     position: absolute;
-    padding: 4.5em 0 0 11em;
+    margin: 4.5em 0 0 11em;
     width: 8em;
 }
 
 .personal-account-enter {
     position: absolute;
     margin: 3.5em 0 0 62em;
-    font-family: Gilroy;
     font-size: 20px;
     border: none;
     background-color: transparent;
@@ -187,7 +179,6 @@
 input {
     background-color: #B7BACB;
     border: none;
-    font-family: Gilroy;
     font-size: 20px;
     height: 50px;
     width: 300px;
@@ -201,7 +192,6 @@ input {
 output {
     background-color: #B7BACB;
     border: none;
-    font-family: Gilroy;
     font-size: 20px;
     height: 40px;
     padding-top: 10px;
@@ -251,20 +241,17 @@ output {
 }
 
 .add-security-title {
-    font-family: Gilroy;
     font-size: 24px;
     color: white;
     margin-right: 6em;
 }
 
 .add-security-title-blue {
-    font-family: Gilroy;
     font-size: 24px;
     color: #6BC8F4;
 }
 
 .add-security-button {
-    font-family: Gilroy;
     font-size: 16px;
     background-color: #B7BACB;
     color: #121629;
@@ -305,7 +292,6 @@ output {
     position: absolute;
     border-right: #747A9B solid;
     z-index: 1;
-    font-family: Gilroy;
 }
 
 .active-admin-panel-button1 {
@@ -325,7 +311,6 @@ output {
     position: absolute;
     border-right: #747A9B solid;
     z-index: 9; /*тут переключается видимость кнопок в папке*/
-    font-family: Gilroy;
 }
 
 .admin-panel-button2 {
@@ -345,7 +330,6 @@ output {
     position: absolute;
     border-right: #747A9B solid;
     z-index: 1; /*тут переключается видимость кнопок в папке*/
-    font-family: Gilroy;
 }
 
 .polygon {
@@ -390,7 +374,6 @@ output {
     justify-content: space-between;
     padding: 0 20px 0 20px;
     align-items: center;
-    font-family: Gilroy;
     font-size: 20px;
     color: white;
     margin-bottom: 20px;
@@ -402,7 +385,6 @@ output {
     justify-content: space-between;
     padding: 0 20px 0 20px;
     align-items: center;
-    font-family: Gilroy;
     font-size: 20px;
     color: white;
     margin-bottom: 20px;
@@ -418,7 +400,6 @@ output {
     padding: 20px;
     margin-bottom: 30px;
     align-items: center;
-    font-family: Gilroy;
     font-size: 16px;
     color: #121629;
 }
@@ -433,7 +414,6 @@ output {
     padding: 20px;
     margin-bottom: 30px;
     align-items: center;
-    font-family: Gilroy;
     font-size: 16px;
     color: #121629;
 }
@@ -449,7 +429,6 @@ output {
     display: flex;
     justify-content: center;
     margin-left: 6em;
-    font-family: Gilroy;
     font-size: 16px;
 }
 
