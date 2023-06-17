@@ -14,7 +14,7 @@ function Main() {
     return (
         <div >
                 <div className="logo-cat">
-                    <img className="logo" src={logo} />
+                    <img className="logo-main" src={logo} />
                 </div>
                 <div className="about-us-title">
     <span className="about-us">

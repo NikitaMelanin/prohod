@@ -1,6 +1,8 @@
 import React from 'react';
 import {useParams} from "react-router-dom";
 import './adminPanel.css'
+import logo from '../../../../logo.svg';
+import {Link,  Outlet} from "react-router-dom";
 const AdminPanel = () => {
     const {id} = useParams();
     const click = () => {
@@ -140,8 +142,8 @@ z-index visitor-information-window-container с 0 на 10
             </div>
             <div className="header-folder">
                 <div className="logo-personal-account">
-                    <img className="logo" src="../styles/logo.svg" />
-                    <button className="personal-account-enter">Фамилия И.О</button>
+                    <img className="logo-admin" src={logo}/>
+                    <Link to="/dashboard/:id/user"><button className="personal-account-enter">Фамилия И.О</button></Link>
                 </div>
                 <div className="add-security">
                     <button type="button" className="add-security-button">
@@ -329,13 +331,13 @@ z-index visitor-information-window-container с 0 на 10
             </div>
             <div className="active-header-folder">
                 <div className="logo-personal-account">
-                    <img className="logo" src="../styles/logo.svg" />
-                    <button
+                    <img className="logo-admin" src={logo}/>
+                    <Link to="/dashboard/:id/user"><button
                         onClick={click}
                         className="personal-account-enter"
                     >
                         Фамилия И.О
-                    </button>
+                    </button></Link>
                 </div>
                 <div className="add-security">
                     <button type="button" className="add-security-button">
@@ -521,8 +523,7 @@ z-index visitor-information-window-container с 0 на 10
                     />
                 </svg>
             </div>
-        </>
-
+        <Outlet/></>
         </div>
     );
 };

@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import "./form.css"
 import {Link} from "react-router-dom";
+import logo from '../../../logo.svg';
+import catw from '../../../styles/cat-w.svg';
 function FormPage () {
 
     const click = () => {
@@ -9,8 +11,8 @@ function FormPage () {
         return (
             <>
                     <div className="logo-cat">
-                        <img className="logo" src="../styles/logo.svg" />
-                        <img className="white-cat" src="../styles/cat-w.svg" />
+                        <img className="logo" src={logo} />
+                        <img className="white-cat" src={catw} />
                     </div>
                     <div className="form-buttons">
                         <button className="form-button1">

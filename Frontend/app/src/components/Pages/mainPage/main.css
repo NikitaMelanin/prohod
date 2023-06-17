@@ -9,7 +9,7 @@ body {
     justify-content: space-between;
 }
 
-.logo {
+.logo-main {
     position: absolute;
     margin: 8em 0 0 9em;
     width: 8em;
@@ -79,7 +79,7 @@ body {
 .service-information-cat {
     position: absolute;
     padding-left: 2.5em;
-    padding-top: 6em;
+    padding-top: 5.8em;
     width: 10%;
     height: 10%;
 }
