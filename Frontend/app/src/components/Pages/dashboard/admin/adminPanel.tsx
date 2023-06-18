@@ -1,6 +1,7 @@
 import React from 'react';
 import {useParams} from "react-router-dom";
 import './adminPanel.css'
+import Popup from 'reactjs-popup';
 import logo from '../../../../logo.svg';
 import {Link,  Outlet} from "react-router-dom";
 const AdminPanel = () => {
@@ -14,125 +15,36 @@ const AdminPanel = () => {
             {/*чтобы показать окно нижу надо изменить свойство visitor-information-window "display" с none на flex, а также
 z-index visitor-information-window-container с 0 на 10
 соответствующим образом с add-security.*/}
-            <div className="add-security-container">
-                <div className="add-security-window">
-                    <div className="add-security-header">
-                        <button type="button" className="visitor-information-back">
-                            назад
-                        </button>
-                        <span className="visitor-information-title">
-          добавление{" "}
-                            <span className="visitor-information-blue">безопасника</span>
-        </span>
-                    </div>
-                    <div className="full-name">
-                        <input type="text" required placeholder="Фамилия" />
-                        <input type="text" required placeholder="Имя" />
-                        <input
-                            type="text"
-                            required
-                            placeholder="Отчество"
-                        />
-                    </div>
-                    <div className="email">
-                        <input type="text" required placeholder="Email" />
-                    </div>
-                    <div className="enter-data">
-                        <input type="text" required placeholder="Логин" />
-                        <input
-                            type="password"
-                            required
-                            placeholder="Пароль"
-                        />
-                        <input
-                            type="password"
-                            required
-                            placeholder="Подтвердите пароль*"
-                        />
-                    </div>
-                    <div className="add-button">
-                        <button type="button" className="add-security-button-add">
-                            добавить
-                        </button>
-                    </div>
-                </div>
-            </div>
             <div className="visitor-information-window-container">
                 <div className="visitor-information-window">
                     <div className="visitor-information-header">
-                        <button type="button" className="visitor-information-back">
-                            назад
-                        </button>
                         <span className="visitor-information-title">
           <span className="visitor-information-blue">заявка</span> гостя
         </span>
                     </div>
                     <div className="full-name">
-                        <output title="" placeholder="Фамилия">
-                            Ffffffffff
-                        </output>
-                        <output  title="" placeholder="Имя">
-                            Ffffffffff
-                        </output>
-                        <output  placeholder="Отчество">
-                            Ffffffffff
-                        </output>
+                        <output title="" placeholder="Фамилия">Ffffffffff</output>
+                        <output  title="" placeholder="Имя">Ffffffffff</output>
+                        <output  placeholder="Отчество">Ffffffffff</output>
                     </div>
                     <div className="passport">
-                        <output
-
-                            placeholder="Серия паспорта"
-                        >
-                            4444
-                        </output>
-                        <output
-
-                            placeholder="Номер паспорта"
-                        >
-                            666666
-                        </output>
-                        <output title="Когда выдан паспорт?">
-                            22.12.2000
-                        </output>
+                        <output placeholder="Серия паспорта">4444</output>
+                        <output placeholder="Номер паспорта">666666</output>
+                        <output title="Когда выдан паспорт?">22.12.2000</output>
                     </div>
                     <div className="passport-textarea">
-                        <output
-                            className="textarea"
-                            placeholder="Кем выдан?"
-                        >
-                            Отделением УФМС по Свердловской обл в г. Екатеринбурге
-                        </output>
+                        <output className="textarea" placeholder="Кем выдан?">Отделением УФМС по Свердловской обл в г. Екатеринбурге</output>
                     </div>
                     <div className="visit-details">
-                        <output
-                            className="date"
-                            title="Дата посещения"
-                        >
-                            12.11.2033
-                        </output>
-                        <output
-                            placeholder="Время посещения"
-                        >
-                            12:35
-                        </output>
-                        <output
-                            placeholder="Кого посещаете?"
-                        >
-                            Обабков И.Н.
-                        </output>
+                        <output className="date" title="Дата посещения">12.11.2033</output>
+                        <output placeholder="Время посещения">12:35</output>
+                        <output placeholder="Кого посещаете?">Обабков И.Н.</output>
                     </div>
                     <div className="visit-reason">
-                        <output
-                            className="textarea"
-                            placeholder="Цель визита"
-                        >
-                            Решение о коллаборации бизнеса "АНАНАС"
-                        </output>
+                        <output className="textarea" placeholder="Цель визита">Решение о коллаборации бизнеса "АНАНАС"</output>
                     </div>
                     <div className="email">
-                        <output placeholder="Email">
-                            reallynigga@gmail.com
-                        </output>
+                        <output placeholder="Email">reallynigga@gmail.com</output>
                     </div>
                     <div className="accept-visitor-buttons">
                         <button className="accept-visitor">Принять</button>
@@ -146,12 +58,39 @@ z-index visitor-information-window-container с 0 на 10
                     <Link to="/dashboard/:id/user"><button className="personal-account-enter">Фамилия И.О</button></Link>
                 </div>
                 <div className="add-security">
-                    <button type="button" className="add-security-button">
-                        добавить безопасника
-                    </button>
-                    <span className="add-security-title">
-        список <span className="add-security-title-blue">заявок</span> на вход
-      </span>
+                    <Popup trigger={<button className="add-security-button">добавить безопасника</button>}>
+                        <div className="add-security-container">
+                            <div className="add-security-window">
+                                <div className="add-security-header">
+                                    <button type="button" className="visitor-information-back">
+                                        назад
+                                    </button>
+                                    <span className="visitor-information-title">добавление{" "}
+                                        <span className="visitor-information-blue">безопасника</span>
+                                    </span>
+                                </div>
+                                <div className="full-name">
+                                    <input type="text" required placeholder="Фамилия" />
+                                    <input type="text" required placeholder="Имя" />
+                                    <input type="text" required placeholder="Отчество"/>
+                                </div>
+                                <div className="email">
+                                    <input type="text" required placeholder="Email" />
+                                </div>
+                                <div className="enter-data">
+                                    <input type="text" required placeholder="Логин" />
+                                    <input type="password" required placeholder="Пароль"/>
+                                    <input type="password" required placeholder="Подтвердите пароль*"/>
+                                </div>
+                                <div className="add-button">
+                                    <button type="button" className="add-security-button-add">
+                                        добавить
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </Popup>
+                    <span className="add-security-title">список <span className="add-security-title-blue">заявок</span> на вход</span>
                 </div>
                 <div className="searching-string">
                     <div className="searching-string" />
@@ -340,9 +279,35 @@ z-index visitor-information-window-container с 0 на 10
                     </button></Link>
                 </div>
                 <div className="add-security">
-                    <button type="button" className="add-security-button">
-                        добавить безопасника
-                    </button>
+                    <Popup trigger={<button className="add-security-button">добавить безопасника</button>}>
+                        <div className="add-security-container">
+                            <div className="add-security-window">
+                                <div className="add-security-header">
+                                    <span className="add-security-information-title">добавление{" "}
+                                        <span className="visitor-information-blue">безопасника</span>
+                                    </span>
+                                </div>
+                                <div className="full-name">
+                                    <input type="text" required placeholder="Фамилия" />
+                                    <input type="text" required placeholder="Имя" />
+                                    <input type="text" required placeholder="Отчество"/>
+                                </div>
+                                <div className="email">
+                                    <input type="text" required placeholder="Email" />
+                                </div>
+                                <div className="enter-data">
+                                    <input type="text" required placeholder="Логин" />
+                                    <input type="password" required placeholder="Пароль"/>
+                                    <input type="password" required placeholder="Подтвердите пароль*"/>
+                                </div>
+                                <div className="add-button">
+                                    <button type="button" className="add-security-button-add">
+                                        добавить
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </Popup>
                     <span className="add-security-title">
         список <span className="add-security-title-blue">заявок</span> на вход
       </span>
@@ -523,7 +488,7 @@ z-index visitor-information-window-container с 0 на 10
                     />
                 </svg>
             </div>
-        <Outlet/></>
+            <Outlet/></>
         </div>
     );
 };
